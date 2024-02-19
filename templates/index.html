@@ -1,12 +1,10 @@
-<html>
-  <head>
-  
-    Welcome to Radiodiagnosis
-  <title>
-    Home Page
-  </title></head>
-  <img src="/static/img1.jpg" alt="Not Here">
-  <body>
-    <p> This home page</p>
-  </body>
-</html>
+{% extends "base.html" %}
+{% block title %}
+<p>Home Page</p>
+{% endblock title %}
+{% block content %}
+<div class="content">
+  <button type="button" class="btn btn-primary">Primary</button>
+</div>
+{% endblock %}
+
