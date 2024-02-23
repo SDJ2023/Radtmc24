@@ -8,6 +8,11 @@ def login():
   return render_template('login.html')
 
 
+@app.route("/cancel")
+def cancel():
+  return render_template('cancel.html')
+
+
 @app.route("/home")
 def home():
   return render_template('index.html')

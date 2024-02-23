@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}
+Cancellation Page
+{% endblock title %}
+{% block content %}
+<form name="cform" method="POST" action="">
+  REFFERAL ID: <Input type="text" name="rrid"/>
+  CANCELLATION DATE:<input type="date" name="cd" />
+  <input type="submit" value="Generate Cancel form" name="cbutton"/>
+</form>
+{% endblock %}
