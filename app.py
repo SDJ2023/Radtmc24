@@ -4,6 +4,11 @@ app = Flask(__name__)
 
 
 @app.route("/")
+def home():
+  return render_template('index.html')
+
+
+@app.route("/login")
 def login():
   return render_template('login.html')
 
@@ -11,11 +16,6 @@ def login():
 @app.route("/cancel")
 def cancel():
   return render_template('cancel.html')
-
-
-@app.route("/home")
-def home():
-  return render_template('index.html')
 
 
 if __name__ == "__main__":
