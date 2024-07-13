@@ -3,6 +3,35 @@
 Home Page
 {% endblock title %}
 {% block body %}
+        <table cellspacing="15px" cellborder="2px"> 
+       <tr><td align="center"><U>CMCHIS</U></td></tr>
+             <td align="center"><U>CANCELLATION REQUEST BY THE HOSPITAL</U></td>
+           <tr><td>DATE WHEN CANCELLATION IS REQUIRED:{{cd}}</td><tr>
+            <tr><td>REFFERAL ID: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {{datas['RefNo']}}
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;TPA ZONE:{{datas.PayerZone}}</td></tr>
+            <tr> <td>NAME OF THE PATIENT:&nbsp; &nbsp; &nbsp;{{datas.PatientName}} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;AGE / SEX:{{datas.PatientAge}} / {{datas.Gender}}</td>
+            </tr>
 
+            <tr><td>HOSPITAL NAME:THANJAVUR MEDICAL COLLEGE AND HOSPITAL (GOVERNMENT)</td></tr>
+            <tr><td>HOSPITAL DISTRICT:THANJAVUR</td></tr>
+            <tr><td>DIAGNOSIS:{{datas.ProvisionalDiagnosis}}</td></tr>
+            <tr><td>DOA:{{datas.AdmissionDate}}</td></tr>
+            <tr><td>TREATING / SURGERY DONE BY:{{datas.TREATDOCTOR}} </td></tr>
+            <tr><td>CANCELLATION DONE BY:{{datas.TREATDOCTOR}}</td></tr>
+            <tr><td>DOCTOR APPROVED BY:{{datas.TREATDOCTOR}} </td></tr>
+            <tr><td>Reason for Cancellation(Kindly fill the appropriate column completely)</td></tr>
+            <tr><td>UNFIT FOR SURGERY WITH REASONS / DETAILS : NIL</td></tr>
+            <tr><td>SURGERY POSTPONED WITH REASONS / DETAILS : NIL</td></tr>
+            <tr></tr>
+            <tr><td>OTHER  WITH REASONS / DETAILS : PATIENT DID NOT COME / PATIENT NOT WILLING</td></tr>
+            </tr>
+        </table>
+<br> <br> <br> <br>
+        <P>{{datas.PatientName}}</P>
+        <P>(SIGNATURE OF PATIENT) / SIGNATURE OF ATTENDER  </P>
+<br> <br> <br> <br>
+        <P align="right">(SIGNATURE OF TREATING DOCTOR WITH DATE)</P>
+
+    
 {% endblock body %}
 
