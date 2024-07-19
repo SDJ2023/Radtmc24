@@ -35,16 +35,13 @@ def perform():
   return render_template("perform.html")
 
 
-@app.route("/result", methods=['POST'])
-def result():
+@app.route('/submit', methods=['POST'])
+def submit():
+  # Get form data
   name = request.form['name']
   email = request.form['email']
-  message = request.form['message']
-
-  return render_template("result.html",
-                         name=name,
-                         email=email,
-                         message=message)
+  # Pass form data to the template
+  return render_template('result.html', name=name, email=email)
 
 
 """
